@@ -1,4 +1,7 @@
 <?php include("path.php")?>
+<?php include("app/database/db.php")
+tt($_POST);
+?>
 <!doctype html>
 <html lang="en">
   <? include(INCLUDE_URL . "head.php")?>

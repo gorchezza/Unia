@@ -10,18 +10,18 @@
             <h1>Регистрация</h1>
           </div>
           <div class="form-container">
-            <form name="" method="post" action="#">
+            <form name="" method="post" action="reg.php">
                 <fieldset class="names">
                     <legend>ФИО</legend>
                     <div class="inputs-reg">
                         <div class="cont-inp">
-                            <input class="reg-inp" type="text" name="firstname" placeholder="Фамилия" />
+                            <input class="reg-inp" type="text" name="first-name" placeholder="Фамилия" />
                         </div>
                         <div class="cont-inp">
-                            <input class="reg-inp" type="text" name="secondname" placeholder="Имя" />
+                            <input class="reg-inp" type="text" name="second=name" placeholder="Имя" />
                         </div>
                         <div class="cont-inp">
-                            <input class="reg-inp" type="text" name="threename" placeholder="Отчество" />
+                            <input class="reg-inp" type="text" name="three-name" placeholder="Отчество" />
                         </div>
                     </div>
                 </fieldset>
