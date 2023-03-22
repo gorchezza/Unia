@@ -95,13 +95,14 @@ function insert($table, $params){
                 $mask = $mask . ", '".$value."'";
             }
         }
-        $sql = "INSERT INTO users($coll) VALUES ($mask)";
+        $sql = "INSERT INTO $table ($coll) VALUES ($mask)";
         $i++;
     }
     
     $query = $pdo->prepare($sql);
     $query->execute();
     dbCheckError($query);
+    return $pdo->lastInsertId();
 }
 
 // Обновление данных в выбранной строке
@@ -132,8 +133,5 @@ function delete($table, $id){
     $query->execute();
     dbCheckError($query);
 }
-
-$test = 'ok';
-echo $test;
 
 ?>

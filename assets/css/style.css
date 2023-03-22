@@ -30,7 +30,7 @@ GLOBAL
  }
 
  p {
-    color: rgba(0, 0, 0, 0.5)
+    color: rgba(0, 0, 0, 0.5);
  }
 
  a {
@@ -41,7 +41,7 @@ GLOBAL
  section {
     background-image: linear-gradient(
         to bottom,
-        rgb(50, 255, 142),
+        rgb(0, 95, 79),
         rgb(0, 46, 107)
       );
     background-color: gradiant;
@@ -190,6 +190,15 @@ REGISTRATION
 
 .title-reg {
     padding-top: 20px;
+}
+
+/* 
+REGISTRATION FORMS/ERRORS
+*/
+
+.error {
+    padding: 10px, 12px;
+    color: rgb(255, 0, 0);
 }
 
 
