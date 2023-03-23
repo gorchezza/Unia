@@ -4,6 +4,31 @@
 GLOBAL
  */
 
+ .flex-container {
+    display: flex;
+    flex-direction: column;
+ }
+
+header {
+    flex-grow: 1;
+    background-color: rgb(172, 172, 172);
+}
+
+main {
+    flex-grow: 3;
+    background-color: rgb(185, 185, 185);
+}
+
+footer {
+    height: 100px;
+    flex-grow: 1;
+    background-color: #000;
+}
+
+.container {
+    margin: 0px 50px;
+}
+
  .form-container {
     padding: 20px;
  }
@@ -39,12 +64,13 @@ GLOBAL
 
 
  section {
-    background-image: linear-gradient(
+    /* background-image: linear-gradient(
         to bottom,
         rgb(0, 95, 79),
         rgb(0, 46, 107)
-      );
-    background-color: gradiant;
+      ); */
+    
+    background-color: #e0e0e0;
     background-repeat: no-repeat;
     height: 100vh;
     display: flex;
@@ -202,3 +228,29 @@ REGISTRATION FORMS/ERRORS
 }
 
 
+/* 
+PRIVATE AREA
+*/
+
+.header-line {
+    display: flex;
+    align-items: center;
+}
+
+.lk {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+} 
+
+.lk-cont {
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+
+    background-color: rgb(255, 255, 255);
+    user-select: none;
+}
